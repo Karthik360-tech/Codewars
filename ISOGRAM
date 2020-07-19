@@ -2,7 +2,7 @@ An isogram is a word that has no repeating letters, consecutive or non-consecuti
 
 is_isogram("Dermatoglyphics" ) == true
 is_isogram("aba" ) == false
-is_isogram("moOse" ) == false # -- ignore letter 
+is_isogram("moOse" ) == false # -- ignore letter case
 
 SOLUTION : 
 IN PYTHON :
