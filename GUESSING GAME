@@ -1,0 +1,32 @@
+This is a guessing game in which computer itself enquires us to guess the number by BINARY SEARCH : 
+Binary search is a searching algorithm in which the target value is compared with the middle element of the sorted array .
+This is a game for guessing the number between 0-100.
+The game returns the guessed number along with the number of guesses ..! 
+
+SOLUTION : 
+guess = 0
+def average(a , b) :
+    avrg = (a+b)//2
+    return avrg
+		
+def guessing(a,b,guess) :
+    print(f'Is it {average(a,b)} ?')
+    choice = str(input('Yes / No :'))
+    
+		if choice == 'y' :
+        guess += 1
+        print('No.of guesses : ',guess)
+        print('The number is ',average(a,b))
+    
+		elif choice == 'n' :
+        guess += 1
+        choice = input('Is it higher or lower ? ')
+        if choice == 'lower' :
+            guessing(a,average(a,b),guess)
+        elif choice == 'higher' :
+            guessing(average(a,b),b,guess)
+    else :
+        print('WRONG INPUT .. RETRY :-')
+        guessing(a,b,guess)
+
+guessing(0,100,guess)
