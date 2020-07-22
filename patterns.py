@@ -1,4 +1,4 @@
-
+#single sided staircase 
 def pattern (n) :
     counter = ''
     temp = n-1
@@ -13,6 +13,7 @@ def pattern (n) :
         temp -= 1
         j+=1
 
+ #double sided staircase 
 def pattern1 () :
     num =  int(input('INPUT :'))
     count = ''
@@ -24,7 +25,7 @@ def pattern1 () :
         print(str(ans1)+'\t'+'HELLO'+str(ans2))
         
 while True :
-    print('''1.One Sided Triangle\n2.Complete Triangle\n3.Exit\n''')
+    print('''1.One Sided Staircase\n2.Complete Staircase\n3.Exit\n''')
     choice = int(input('Enter the choice :'))
     if choice == 1 :
         num = int(input('Enter a positive number :'))
